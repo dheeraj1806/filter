@@ -71,7 +71,7 @@ if(isset($_POST["action"]))
 	}
 	else
 	{
-		echo "ERROR: Could not able to execute $query. " . mysqli_error($connect);
+		$output = '<h3>No Data Found</h3>';
 	}
 	echo $output;
 }
